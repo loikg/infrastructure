@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  backend:
+    image: backend
+    ports:
+    - "8080:80"
+    volumes:
+    - /application/backend:/application/backend
+  frontend:
+    image: frontend
+    ports:
+    - "8181:3000"
+    volumes:
+    - /application/frontend:/application/frontend
