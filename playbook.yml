@@ -1,0 +1,20 @@
+---
+- hosts: mysql
+  vars:
+  - mysql_root_password: "root"
+  - example_database: "example"
+  - example_database_user: "example"
+  - example_database_password: "example"
+  roles:
+  - role: 'ads-myql'
+    tags: ['mysql']
+
+- hosts: elastic
+  roles:
+  - role: 'ads-elastic'
+    tags: ['elastic']
+
+- hosts: app
+  roles:
+  - role: 'ads-app'
+    tags: ['app']

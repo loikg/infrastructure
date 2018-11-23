@@ -1,0 +1,20 @@
+# from a webserver, where the role is packaged in a tar.gz
+- src: https://github.com/loikg/role-ads-mysql.git
+  name: ads-myql
+
+# from a webserver, where the role is packaged in a tar.gz
+- src: https://github.com/loikg/role-ads-elastic.git
+  name: ads-elastic
+
+# from a webserver, where the role is packaged in a tar.gz
+- src: https://github.com/loikg/role-ads-app.git
+  name: ads-app
+
+- src: geerlingguy.pip
+
+- src: geerlingguy.docker
+
+- src: elastic.elasticsearch
+  version: "6.4.0"
+
+- src: geerlingguy.mysql
